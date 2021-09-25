@@ -29,15 +29,32 @@ console.log(age2);
 // }
 // console.log(yearsUntilRetirement(1991,'Piotr'));
 // console.log(yearsUntilRetirement(1980,'Bob'));
+//
+// function cutFruitPieces(fruit) {
+//     return fruit * 4;
+// }
+//
+// function fruitProcessor(apples, oranges) {
+//     const applePices = cutFruitPieces(apples);
+//     const orangePices = cutFruitPieces(oranges);
+//     const juice = `Juice with ${applePices} apples and ${orangePices} oranges.`;
+//     return juice;
+// }
+// console.log(fruitProcessor(2,3));
 
-function cutFruitPieces(fruit) {
-    return fruit * 4;
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
 }
 
-function fruitProcessor(apples, oranges) {
-    const applePices = cutFruitPieces(apples);
-    const orangePices = cutFruitPieces(oranges);
-    const juice = `Juice with ${applePices} apples and ${orangePices} oranges.`;
-    return juice;
+const yearsUntilRetirement = function (birthYear,firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+    if (retirement > 0) {
+        return  retirement;
+    } else {
+        return -1;
+    }
+    //return `${firstName} retires in ${retirement} years`;
 }
-console.log(fruitProcessor(2,3));
+
+console.log(yearsUntilRetirement(1970,'Jonas'));
