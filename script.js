@@ -82,18 +82,57 @@ HINT: To check if number A is at least double number B, check for A >= 2 * B. Ap
 
 GOOD LUCK 😀
 */
-const calcAverage = (score1, score2, score3 ) => (score1 + score2 + score3)/3;
-// const averageDolphins = calcAverage(44,23,71)
-// const averageKoalas = calcAverage(65,54,49)
-const averageDolphins = calcAverage(86,54,41)
-const averageKoalas = calcAverage(23,34,27)
-function checkWinner(averageDolphins,averageKoalas) {
-    if (averageDolphins >= 2 * averageKoalas) {
-        console.log(`Dolphins win (${averageDolphins} vs. ${averageKoalas})`);
-    } else if (averageKoalas >= 2 * averageDolphins) {
-        console.log(`Koalas win (${averageKoalas} vs. ${averageDolphins})`);
-    } else {
-        console.log('No team wins...');
-    }
+// const calcAverage = (score1, score2, score3 ) => (score1 + score2 + score3)/3;
+// // const averageDolphins = calcAverage(44,23,71)
+// // const averageKoalas = calcAverage(65,54,49)
+// const averageDolphins = calcAverage(86,54,41)
+// const averageKoalas = calcAverage(23,34,27)
+// function checkWinner(averageDolphins,averageKoalas) {
+//     if (averageDolphins >= 2 * averageKoalas) {
+//         console.log(`Dolphins win (${averageDolphins} vs. ${averageKoalas})`);
+//     } else if (averageKoalas >= 2 * averageDolphins) {
+//         console.log(`Koalas win (${averageKoalas} vs. ${averageDolphins})`);
+//     } else {
+//         console.log('No team wins...');
+//     }
+// }
+// checkWinner(averageDolphins,averageKoalas);
+
+//Arrays
+const  friend1 = 'Michael';
+const  friend2 = 'Steven';
+const  friend3 = 'Peter';
+
+const friends = ['Michael','Steven','Peter'];
+console.log(friends);
+const y = new Array(1999, 2000, 2001, 2020);
+console.log(y);
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+// friends = ['Bob', 'Alice'];
+
+
+const firstName = 'Jonas';
+
+
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991,friends];
+console.log(jonas);
+console.log(jonas.length);
+
+const  calcAge = function (birthYear) {
+    return 2037 - birthYear;
 }
-checkWinner(averageDolphins,averageKoalas);
+
+const years = [1990,1967,2002,2010,2018];
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1,age2,age3);
+
+const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length - 1])];
+console.log(ages);
