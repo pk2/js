@@ -188,3 +188,24 @@ GOOD LUCK 😀
 // const tips = [calcTip(bills[0]), calcTip(bills[1]),calcTip(bills[2])];
 // const total = [calcTip(bills[0])+tips[0], calcTip(bills[1])+tips[1],calcTip(bills[2])+tips[2]];
 // console.log(tips, total);
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(jonas);
+//
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+
+const nameKey ='Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+// const interestedIn = prompt('test');
+
+
