@@ -255,24 +255,48 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 GOOD LUCK 😀
 */
 
-const mark = {
-    name: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    bmi: 0,
-    calcBMI: function () {
-         this.bmi = this.mass / (this.height * this.height);
-         return this.bmi;
-    }
-};
-const john = {
-    name: 'John Smith',
-    mass: 92,
-    height: 1.95,
-    bmi: 0,
-    calcBMI: function () {
-        this.bmi = this.mass / (this.height * this.height);
-        return this.bmi;
-    }
-};
-console.log((mark.calcBMI() > john.calcBMI() ? `${mark.name}'s (${mark.bmi})` : `${john.name}'s (${john.bmi})`) + `is higher than ` + (mark.calcBMI() < john.calcBMI() ? `${mark.name}'s (${mark.bmi})` : `${john.name}'s (${john.bmi})`));
+// const mark = {
+//     name: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     bmi: 0,
+//     calcBMI: function () {
+//          this.bmi = this.mass / (this.height * this.height);
+//          return this.bmi;
+//     }
+// };
+// const john = {
+//     name: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+//     bmi: 0,
+//     calcBMI: function () {
+//         this.bmi = this.mass / (this.height * this.height);
+//         return this.bmi;
+//     }
+// };
+// console.log((mark.calcBMI() > john.calcBMI() ? `${mark.name}'s (${mark.bmi})` : `${john.name}'s (${john.bmi})`) + `is higher than ` + (mark.calcBMI() < john.calcBMI() ? `${mark.name}'s (${mark.bmi})` : `${john.name}'s (${john.bmi})`));
+
+// for (let rep = 1; rep <= 10 ; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// const jonasArray = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037-1991,
+//     'teacher',
+//     ['Michael','Peter','Steven']
+// ];
+//
+// for (let array = 0; array < jonasArray.length; array++) {
+//     console.log(jonasArray[array]);
+// }
+
+//
+// for (let exercise = 1; exercise < 4; exercise++) {
+//     console.log(`====== Starting exercise ${exercise}`);
+//     for (let rep = 1; rep < 6; rep++) {
+//         console.log(`Exercise: ${exercise}: Lifting weight repetition ${rep}`);
+//     }
+// }
